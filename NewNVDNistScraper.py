@@ -25,7 +25,7 @@ def searchByCVE():
 		sys.stdout = f
 		for i in CVEID:
 			try:
-				r = nvdlib.getCVE(i, key='7f80f508-b309-4284-9452-3108247e106b')
+				r = nvdlib.getCVE(i)
 			except LookupError:
 				print(i + ' does not exist.')
 				continue
