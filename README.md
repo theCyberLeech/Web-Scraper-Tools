@@ -33,6 +33,10 @@ would ouptut the CVE ID of a vulnerability that did not require the attacker to 
 
 (2) Search for CPE by Keyword:
 If you're uncertain of the CPE Name (Affected Software), you can search for the name of the service or software and this will output to a file that is named after the search you conducted Ex. 'Microsoft Windows Server 2008YYYY_MM_DD-hh:mm:ss_AM|PM.txt'.txt'. You can utilize this to find the cpe: that you'll need to use option (3).
+Ex.
+
+![image](https://user-images.githubusercontent.com/102625690/160989150-b5e22992-83b6-40b2-b1b9-77d7158ffd20.png)
+
 
 Sreenshot of Output:
 
