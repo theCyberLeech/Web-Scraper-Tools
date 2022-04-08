@@ -34,13 +34,15 @@ def searchByCVE():
 			timeParsed = zulu.parse(PubDate)
 			print('Published Date: ', end='')
 			print(timeParsed)
-			print('\nDescription: ' + r.cve.description.description_data[0].value + '\n')
 			try:
 				print('v3 Vector: ' + r.v3vector)
 			except AttributeError:
 				print('v3 Vector Score not available')
+			print('Attack Vector: ' + r.impact.baseMetricV3.cvssV3.attackVector)
+			print('Attack Complexity: ' + r.impact.baseMetricV3.cvssV3.attackComplexity)
+			print('Privileges Required: ' + r.impact.baseMetricV3.cvssV3.privilegesRequired)
+			print('User Interaction: ' + r.impact.baseMetricV3.cvssV3.userInteraction)
 			print('CWE ID: ' + r.cve.problemtype.problemtype_data[0].description[0].value)
-			print('Nist URL: ' + str(r.url))
 			print('Exploitability: ', end='')
 			try:
 				print(r.v3exploitability)
@@ -49,8 +51,10 @@ def searchByCVE():
 			print('V3 Score: ', end='')
 			print(r.score[1], end=' - ')
 			print(r.score[2])
+			print('\nDescription: ' + r.cve.description.description_data[0].value + '\n')
 			print('\nReferences: ')
 			count = 0
+			print('Nist URL: ' + str(r.url))
 			References = r.cve.references.reference_data
 			for eachURL in References:
 				length = range(len(References))
@@ -112,6 +116,10 @@ def searchByCPE():
         	        	        print('v3 Vector: ' + i.v3vector)
 				except AttributeError:
 					print('v3 Vector Score not available')
+				print('Attack Vector: ' + i.impact.baseMetricV3.cvssV3.attackVector)
+				print('Attack Complexity: ' + i.impact.baseMetricV3.cvssV3.attackComplexity)
+				print('Privileges Required: ' + i.impact.baseMetricV3.cvssV3.privilegesRequired)
+				print('User Interaction: ' + i.impact.baseMetricV3.cvssV3.userInteraction)
 				print('CWE ID: ' + i.cve.problemtype.problemtype_data[0].description[0].value)
 				print('Nist URL: ' + str(i.url))
 				print('Exploitability: ', end='')
