@@ -3,6 +3,7 @@ Web Scraper that will automate vulnerability assessement tasks
 
 Usage: python3 NewNVDNistScraper.py
 
+NOTE: under construction due to updates made to the nvdlib library. 8/7/2023
 
 
 
