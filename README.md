@@ -3,9 +3,9 @@ Web Scraper that will automate vulnerability assessement tasks
 
 Usage: python3 NewNVDNistScraper.py
 
-<p>NOTE: under construction due to updates made to the nvdlib library. (8/7/2023)</p>
+<p><bold>NOTE</bold>: under construction due to updates made to the nvdlib library. (8/7/2023)</p>
 
-<p>NOTE: I have updated the script to align with the updates made to the nvdlib Python library.
+<p><bold>NOTE</bold>: I have updated the script to align with the updates made to the nvdlib Python library.
       Results now are outputted to a text file that is formatted in a way that it can be 
       uploaded to an Excel spreadsheet. The data is now workable and managable. (8/26/2023)</p>
       
