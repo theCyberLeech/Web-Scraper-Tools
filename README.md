@@ -3,14 +3,12 @@ Web Scraper that will automate vulnerability assessement tasks
 
 Usage: python3 NewNVDNistScraper.py
 
-NOTE: under construction due to updates made to the nvdlib library. (8/7/2023) \n
-NOTE: I have updated the script to align with the updates made to the nvdlib Python library.
+<p>NOTE: under construction due to updates made to the nvdlib library. (8/7/2023)</p>
+
+<p>NOTE: I have updated the script to align with the updates made to the nvdlib Python library.
       Results now are outputted to a text file that is formatted in a way that it can be 
-      uploaded to an Excel spreadsheet. The data is now workable and managable. (8/26/2023)
-
-
-
-
+      uploaded to an Excel spreadsheet. The data is now workable and managable. (8/26/2023)</p>
+      
 
 Screenshot of Menu: (Randomized ASCII font)
 
@@ -22,7 +20,8 @@ Screenshot of Menu: (Randomized ASCII font)
 If you know the CVE ID that you want to search for, you can just type them in individually spaced.
 Example:
 
-![image](https://user-images.githubusercontent.com/102625690/160985481-0256cb99-8203-45db-8943-5b7166035e88.png)
+![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/7f713aae-3719-42ab-8e8e-b9d0bb072518)
+
 
 The results will then output to a file in the same directory named 'CVESearchYYYY_MM_DD-hh:mm:ss_AM|PM.txt'
 each column is delimited by 2 semi-colons (;;) due to some of the links containing semi-colons, two are used to resolve
@@ -30,7 +29,8 @@ the issue of links showing up in separate columns.
 
 Screenshot of output:
 
-![image](https://user-images.githubusercontent.com/102625690/160985948-833bff9e-1fb4-47c3-b2ee-e4580d5488d9.png)
+![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/fe67722d-e32a-4736-ab02-284bc42d9a82)
+
 
 
 <h2>(2) Search for CPE by Keyword:</h2>
