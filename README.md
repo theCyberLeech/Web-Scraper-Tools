@@ -51,8 +51,6 @@ Sreenshot of Output:
 
 <p>Copy the most relevant CPE Name and then move to step (3).</p>
 
-<p>Ex. "cpe:2.3:o:microsoft:windows_server_2008:-:-:*:*:enterprise:*:x64:*"</p>
-
 <h2>(3) Search by CPE:</h2>
 
 Paste the CPE Name starting with cpe:
@@ -61,7 +59,8 @@ Paste the CPE Name starting with cpe:
 All the vulnerabilities found for that specific CPE Name will be listed and the file will be named after the CPE Name that you searched for.
 Screenshot of the Output:
 
-![image](https://user-images.githubusercontent.com/102625690/160988298-be069588-b3ba-4b48-9914-05ce7d29aa2e.png)
+![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/b1adbcac-f50d-4e82-8ac9-e3bb563e55f6)
+
 
 NOTE: Data can now be uploaded to an Excel spreadsheet for ease of use.
 
