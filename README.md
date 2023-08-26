@@ -36,8 +36,7 @@ Screenshot of output:
 
 Screenshot of data in Excel:
 
-![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/e92722e1-775f-457c-b566-ef6debed8a4c)
-
+![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/289be37e-0283-46e7-bc84-c1e6cc93019a)
 
 <h2>(2) Search for CPE by Keyword:</h2>
 
