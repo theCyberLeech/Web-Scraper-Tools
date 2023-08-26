@@ -22,7 +22,7 @@ def searchByCVE():
 
         with open('CVESearch' + date + '.txt', 'w') as f:
                 sys.stdout = f
-                print('CVE ID;; CWE ID;; Affected CPE IDs;;V31 Severity;; Description;; References') 
+                print('CVE ID;; Date Published;; CWE ID;; Affected CPE IDs;;V31 Severity;; Description;; References') 
                 for i in CVEID:
                         try:
 #                               r = nvdlib.searchCVE(cveId=i, key='XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX') # << Place your API key here
