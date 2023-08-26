@@ -44,8 +44,7 @@ which cpeName is needed for your particiular software, you can use the 'search b
 
 Ex.
 
-![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/6d7b3262-bf1e-4acb-ace4-e3dd89fb68d9)
-
+![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/ac2155e2-7881-4fdf-96b9-f97db7150508)
 
 
 Sreenshot of Output:
