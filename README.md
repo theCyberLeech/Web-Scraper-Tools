@@ -1,7 +1,8 @@
 # Web-Scraper-Tools
-Web Scraper that will automate vulnerability assessement tasks
+Web Scraper that will automate certain aspects of vulnerability assessement tasks.
+Such as not needing to manually search NVD. 
 
-Usage: python3 NewNVDNistScraper.py
+<strong>Usage</strong>: python3 NewNVDNistScraper.py
 
 <p><strong>NOTE</strong>: under construction due to updates made to the nvdlib library. (8/7/2023)</p>
 
@@ -17,8 +18,10 @@ Screenshot of Menu: (Randomized ASCII font)
 
 
 <h2>(1) Search by CVE:</h2>
-If you know the CVE ID that you want to search for, you can just type them in individually spaced.
-Example:
+
+If you know the CVE ID that you want to search for, you can just type them in separating each CVE with one space.
+
+<strong>Example</strong>:
 
 ![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/7f713aae-3719-42ab-8e8e-b9d0bb072518)
 
@@ -31,6 +34,9 @@ Screenshot of output:
 
 ![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/fe67722d-e32a-4736-ab02-284bc42d9a82)
 
+Screenshot of data in Excel:
+
+![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/e92722e1-775f-457c-b566-ef6debed8a4c)
 
 
 <h2>(2) Search for CPE by Keyword:</h2>
@@ -51,12 +57,16 @@ Sreenshot of Output:
 
 ![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/d4c492ed-2d08-4692-b8c7-ea7202ed4806)
 
+Screenshot of data in Excel:
+
+![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/641f908b-2030-4135-ab80-dd30216069d0)
+
 
 <p>Copy the most relevant CPE Name and then move to step (3).</p>
 
 <h2>(3) Search by CPE:</h2>
 
-Paste the CPE Name starting with cpe:
+<strong>Paste the CPE Name starting with cpe</strong>:
 
 ![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/79e43f4c-8385-4b29-95fd-54fd95e50d60)
 
@@ -65,6 +75,10 @@ All the vulnerabilities found for that specific CPE Name will be listed and the 
 Screenshot of the Output:
 
 ![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/b1adbcac-f50d-4e82-8ac9-e3bb563e55f6)
+
+Screenshot of data in Excel:
+
+![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/67296e34-71c7-4621-bfc1-48a3f60d6848)
 
 
 NOTE: Data can now be uploaded to an Excel spreadsheet for ease of use.
