@@ -57,7 +57,9 @@ Sreenshot of Output:
 <h2>(3) Search by CPE:</h2>
 
 Paste the CPE Name starting with cpe:
-![image](https://user-images.githubusercontent.com/102625690/160988054-d5d4c06e-578f-4d3f-8976-c1066d300a89.png)
+
+![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/79e43f4c-8385-4b29-95fd-54fd95e50d60)
+
 
 All the vulnerabilities found for that specific CPE Name will be listed and the file will be named after the CPE Name that you searched for.
 Screenshot of the Output:
