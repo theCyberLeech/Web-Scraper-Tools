@@ -50,7 +50,7 @@ Sreenshot of Output:
 ![image](https://user-images.githubusercontent.com/102625690/160987465-281e1875-8583-4bef-b7c9-171feefd91a1.png)
 
 Copy the most relevant CPE Name and then move to step (3).
-<p>Ex. cpe:2.3:o:microsoft:windows_server_2008:-:-:*:*:enterprise:*:x64:*</p>
+<p>Ex. cpe:2\.3\:\o\:microsoft:windows_server_2008:-:-:*:*:enterprise:*:x64:*</p>
 
 <h2>(3) Search by CPE:</h2>
 
