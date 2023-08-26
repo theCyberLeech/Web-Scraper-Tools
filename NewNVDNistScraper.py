@@ -143,7 +143,7 @@ def Banner():
 def Menu():
         print('''
         \n\n
-                                Welcome to the NewNVDNistScrapper[0].py!
+                                Welcome to the NewNVDNistScrapper.py!
         This tool can be used to grab information on known vulnerabilities inside the NVD framework.
 
                                         Created By Ana De Jesus
