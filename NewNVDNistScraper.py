@@ -12,6 +12,7 @@ import zulu
 import sys
 from datetime import datetime
 from art import *
+import re
 
 date = datetime.now().strftime('%Y_%m_%d-%I:%M:%S_%p')
 original_stdout = sys.stdout
@@ -19,16 +20,18 @@ original_stdout = sys.stdout
 def searchByCVE():
         input_string = input('Which CVE IDs do you want to look up?\n')
         CVEID = input_string.split()
-
         with open('CVESearch' + date + '.txt', 'w') as f:
                 sys.stdout = f
                 print('CVE ID;; Date Published;; CWE ID;; Affected CPE IDs;;V31 Severity;; Description;; References') 
                 for i in CVEID:
+                    pattern = '^(cve|CVE)-[0-9]{4}-[0-9]{4,}$'
+                    result = re.match(pattern, i)
+                    if result:
                         try:
 #                               r = nvdlib.searchCVE(cveId=i, key='XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX') # << Place your API key here
                                 r = nvdlib.searchCVE(cveId=i)
                         except LookupError:
-                                print(i + ' does not exist.;;', end= '\n')
+                                print(i + ' ;;does not exist.;;n/a;;n/a;;n/a;;n/a;;n/a', end='\n')
                                 continue
                         print(i + ';;', end=' ')
                         print(r[0].published + ';;', end=' ')
@@ -52,6 +55,11 @@ def searchByCVE():
                                 print(Refs, end=', ')
                                 count += 1
                         print(end='\n')
+
+                    else:
+                        print(i + ';; CVE IDs need to be in the format of CVE-YYYY-NNNNNNN;;', end='')
+                        print('Please try again.;;n/a ;;n/a ;;n/a ;;n/a')
+                        continue
                 sys.stdout = original_stdout
         f.close()
         whatNext()
@@ -169,9 +177,6 @@ Make your selection: \n''')
         else:
                 print('Bad input, try again. Do not use spaces. Enter 1, 2, 3 or 4.')
         Menu()
-
-NVDNistBanner = text2art('NVDNISTSCRAPEr.py', font='rnd-small')
-
 
 Banner()
 Menu()
