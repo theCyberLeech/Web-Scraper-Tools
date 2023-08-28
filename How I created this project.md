@@ -29,10 +29,20 @@ Vulnerability Database (NVD) rather than to manually searching for each relevant
 
 <p>Which shows us this:</p>
 
-![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/4896004a-72b9-42db-9461-3325f7d86015)
+![image](https://github.com/theCyberLeech/Web-Scraper-Tools/assets/102625690/14be3bd2-8e98-4cda-a576-0e43199466e8)
+
 
 <p>If we use the example that was given to us, then we should try to understand how <i>r[0].id</i> gives us the CVEID printed to the screen</p>
-<p>By looking at the image above, we can see that the CVEID is the first thing printed to the block of text and the parameter name is '<i>id</i>!</p>
+<p>By looking at the image above, we can see that the CVEID is the first thing printed to the block of text and the parameter name is '<i>id</i>'!</p>
+
+<p>Now it's time to test different parameters. Every time you see a bracket '[' it's the beginning of a new index with the name of the index showing first.. So with the id all we needed to do was:
+
+  <i>r[0].id</i>
+
+If we want to see the description we need to do something like:
+
+<i>r[0].description[0].value</i>
+
 
 <p>Some of the more skilled programmers are probably asking why I didn't just parse the JSON and upload it to Excel like that. The answer here is that I tried doing that.</p>
 
